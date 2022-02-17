@@ -1,0 +1,9 @@
+FUNCTION sumOfSquares(numberList):
+    total = 0
+
+    FOR index FROM 0 -> length(numberList):
+       total = total + numberList[index] * numberList[index]
+    ENDLOOP
+    
+    RETURN total
+END FUNCTION

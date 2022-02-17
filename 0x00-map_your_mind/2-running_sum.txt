@@ -1,0 +1,12 @@
+sum -> 0
+number -> 0
+
+WHILE number > 0:
+    number = PROMPT 'Enter number:'
+
+    if number > 0:
+        sum = sum + number
+ENDLOOP
+
+PRINT sum
+

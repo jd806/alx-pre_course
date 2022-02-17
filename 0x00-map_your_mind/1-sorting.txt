@@ -1,0 +1,20 @@
+numberList -> emptyList
+
+FOR index FROM 0 -> 3:
+    numberList[index] = PROMPT 'Enter number'
+ENDLOOP
+
+FOR index FROM 0 -> 3:
+    IF index NOT EQUAL 2:
+        CURRENT_NUMBER = numberList[index]
+        NEXT_NUMBER = numberList[index + 1]
+
+        IF NEXT_NUMBER < CURRENT_NUMBER:
+            numberList[index] = NEXT_NUMBER
+            numberList[index + 1] = CURRENT_NUMBER
+        ENDIF
+    ENDIF
+ENDLOOP
+
+PRINT numberList
+
